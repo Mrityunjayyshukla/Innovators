@@ -440,173 +440,78 @@ body {
     letter-spacing: 0;
     line-height: normal;
   }
+
+/* Container for the whole section */
+.container-1 {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading style */
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "Inter", Helvetica;
+}
+
+/* Flexbox for the product cards row */
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style for each product card */
+.product-card {
+  background: #e5e5e5;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.5);
+  width: calc(16.66% - 20px); /* 6 items in a row */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+/* Add a hover effect to the cards */
+.product-card:hover {
+  transform: translateY(-10px) translateX(-10px);
+}
+
+/* Image style */
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: background-image 0.3s ease;
   
-  .redesign-of-h-m-page .group-3 {
-    position: absolute;
-    width: 1071px;
-    height: 270px;
-    top: 840px;
-    left: 200px;
-  }
-  
-  .redesign-of-h-m-page .text-wrapper-11 {
-    position: absolute;
-    width: 392px;
-    top: 0;
-    left: 350px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .redesign-of-h-m-page .overlap-group-3 {
-    position: relative;
-    width: 144px;
-    height: 210px;
-    background-color: #e5e5e5;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 8px 8px 15px #a3b1c0, -8px -8px 15px #ffffff;;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .redesign-of-h-m-page .overlap-group-3:hover {
-    box-shadow: inset 4px 4px 10px #a3b1c0, inset -4px -4px 10px #ffffff;
-  }
-  
-  .redesign-of-h-m-page .text-wrapper-12 {
-    position: absolute;
-    width: 80px;
-    top: 168px;
-    left: 40px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 12px;
-    text-align: start;
-    letter-spacing: 0;
-    line-height: normal;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .redesign-of-h-m-page .text-wrapper-13 {
-    position: absolute;
-    width: 70px;
-    top: 183px;
-    left: 40px;
-    font-family: "Inter", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: start;
-    letter-spacing: 0;
-    line-height: normal;
-    font-weight: 600;
-  }
-  
-  .redesign-of-h-m-page .rectangle1 {
-    position: absolute;
-    width: 121px;
-    height: 150px;
-    top: 10px;
-    left: 11px;
-    background-image: url('assets/images/cloth1_kid.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 18px;
-    cursor: pointer;
-}
-.redesign-of-h-m-page .rectangle1:hover{
-  background-image: url('assets/images/cloth1_kidback.jpg');
 }
 
-.redesign-of-h-m-page .rectangle2 {
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 10px;
-  left: 11px;
-  background-image: url('assets/images/cloth2_kid.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 18px;
-  cursor: pointer;
+/* Product title */
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  font-family: "Inter", Helvetica;
 }
 
-.redesign-of-h-m-page .rectangle2:hover{
-  background-image: url('assets/images/cloth2_kidback.webp');
-}
-.redesign-of-h-m-page .rectangle3 {
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 10px;
-  left: 11px;
-  background-image: url('assets/images/cloth3_kid.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 18px;
-  cursor: pointer;
-}
-.redesign-of-h-m-page .rectangle3:hover{
-  background-image: url('assets/images/cloth3_kidback.webp');
+/* Product price */
+.product-price {
+  font-size: 14px;
+  color: #888;
+  margin-top: 8px;
+  font-family: "Inter", Helvetica;
+
 }
 
-.redesign-of-h-m-page .rectangle4 {
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 10px;
-  left: 11px;
-  background-image: url('assets/images/cloth4_kid.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 18px;
-  cursor: pointer;
-}
-.redesign-of-h-m-page .rectangle4:hover{
-  background-image: url('assets/images/cloth4_kidback.jpg');
-}
-
-.redesign-of-h-m-page .rectangle5 {
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 10px;
-  left: 11px;
-  background-image: url('assets/images/cloth5_kid.webp');
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 18px;
-  cursor: pointer;
-}
-
-.redesign-of-h-m-page .rectangle5:hover{
-  background-image: url('assets/images/cloth5_kidback.jpg');
-}
-
-.redesign-of-h-m-page .rectangle6 {
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 10px;
-  left: 11px;
-  background-image: url('assets/images/cloth6_kid.webp');
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 18px;
-  cursor: pointer;
-}
-
-.redesign-of-h-m-page .rectangle6:hover{
-  background-image: url('assets/images/cloth6_kidback.jpg');
-}
 
 .redesign-of-h-m-page .group-4 {
   position: absolute;

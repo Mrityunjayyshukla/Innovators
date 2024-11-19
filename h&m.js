@@ -24,3 +24,24 @@ document.addEventListener('click', function(event) {
     sidePanel.classList.remove("open");
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+      const productImage = card.querySelector('.product-image');
+      const originalImage = productImage.style.backgroundImage; // Get the initial background image (before hover)
+      const hoverImage = card.getAttribute('data-hover-image'); // Get the hover image from the data attribute
+
+      // When the mouse enters the card, change the background image to the hover image
+      card.addEventListener('mouseenter', function () {
+          productImage.style.backgroundImage = `url(${hoverImage})`;
+      });
+
+      // When the mouse leaves the card, revert back to the original background image
+      card.addEventListener('mouseleave', function () {
+          productImage.style.backgroundImage = originalImage;
+      });
+  });
+});
